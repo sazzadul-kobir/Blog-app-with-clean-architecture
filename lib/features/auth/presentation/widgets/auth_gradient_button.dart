@@ -3,7 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AuthGrandientButton extends StatelessWidget {
-  const AuthGrandientButton({super.key});
+  final String buttonName;
+  const AuthGrandientButton({super.key, required this.buttonName});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,7 @@ class AuthGrandientButton extends StatelessWidget {
       ),
       child: ElevatedButton(
           onPressed: (){},
-          child: Text("Sign Up",
+          child: Text(buttonName,
           style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: 17,

@@ -1,6 +1,6 @@
 
 import 'package:blog_app/core/theme/theme.dart';
-import 'package:blog_app/features/auth/presentation/pages/sign_up_page.dart';
+import 'package:blog_app/features/auth/presentation/pages/sign_in.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: Apptheme.darkThemeMode,
 
-      home: SignUpPage(),
+      home: SignInPage(),
     );
   }
 }
